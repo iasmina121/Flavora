@@ -1,0 +1,190 @@
+:root{
+  --lilac:#806979;
+}
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font: Montserrat;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+html{
+  font-size: 85%;
+  scroll-behavior: smooth;
+  scroll-padding: 6rem;
+}
+
+body {
+  overflow: hidden;
+  background-color: floralwhite;
+}
+header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height:60px;
+  background-color: floralwhite;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  border-bottom: solid 1px var(--lilac);
+  word-spacing: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+ 
+}
+
+header .navbar a{
+  display: inline-block;
+  padding: 5px 10px;
+  margin-top:40px;
+  color: var(--lilac);
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 1.3em;
+  transition: transform 0.3s ease, font-size 0.3s ease;
+  max-width: 120px;
+  overflow: hidden;
+  width: 150px; /* Setăm o lățime fixă pentru fiecare element */
+  height: 40px;
+}
+
+header .navbar a:hover{
+  color:#633552;
+  font-size: 16px;
+  transform: translateY(-15%) scale(1.0);
+  font-weight: bold;
+}
+
+header .logo {
+  max-width: 150px;
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-top: 18px;
+}
+
+.home_pic{
+  margin-top:55px;
+  width: 1450px;
+  height: 380px;
+  margin-left: 43px;
+  margin-right: 23px;
+  padding: 20px;
+  display:block; 
+  border-radius: 40px;
+  
+}
+
+.index_description{
+    text-align: justify;
+    font-size: 20px;
+    width: auto;
+    color: #633552;
+    font: Poppins;
+    text-transform: none;
+   
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.row {
+  margin-left: 60px;
+}
+.row::after {
+  content: "";
+  display:table;
+  clear: both;
+}
+
+.column img {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px; /* Increase the bottom margin of the images */
+  border-radius: 20px;
+}
+
+.column:first-child {
+  width: 538px;
+}
+
+html {
+  font-size: 100%;
+} 
+
+.page {
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.page {
+  padding-top: 2rem;
+  min-height: calc(100vh - (6rem + 4rem));
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  font-weight: 420;
+}
+
+@media screen and (max-width: 576px) {
+  /* Adjust layout for small screens */
+  .container {
+    width: 100%; /* Adjust container width to fill the screen */
+    padding: 0 10px; /* Add some padding to the sides for spacing */
+  }
+  /* Adjust font sizes for small screens */
+  h1 {
+    font-size: 24px; /* Example: Decrease font size for smaller screens */
+  }
+  /* Example: Hide some elements or adjust their layout for smaller screens */
+  .desktop-only {
+    display: none;
+  }
+}
+
+/* Styles for medium screens (between 577px and 992px) */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  /* Adjust layout for medium screens */
+  .container {
+    width: 80%; /* Example: Make the container slightly narrower */
+    padding: 0 20px; /* Add more padding for medium screens */
+  }
+  /* Adjust font sizes for medium screens */
+  h1 {
+    font-size: 36px; /* Example: Increase font size for medium screens */
+  }
+}
+
+/* Styles for large screens (993px and above) */
+@media screen and (min-width: 993px) {
+  /* Adjust layout for large screens */
+  .container {
+    width: 70%; /* Example: Make the container even narrower for large screens */
+    padding: 0 30px; /* Add even more padding for large screens */
+  }
+  /* Adjust font sizes for large screens */
+  h1 {
+    font-size: 48px; /* Example: Further increase font size for large screens */
+  }
+  /* Example: Show additional elements or adjust their layout for large screens */
+  .desktop-only {
+    display: block;
+  }
+}

@@ -1,0 +1,671 @@
+:root{
+  --lilac:#806979;
+}
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font: Montserrat;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+html{
+  font-size: 85%;
+  scroll-behavior: smooth;
+  scroll-padding: 6rem;
+}
+body{
+  background-color: floralwhite;
+}
+header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height:60px;
+  background-color: floralwhite;;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  border-bottom: solid 1px var(--lilac);
+  word-spacing: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+ 
+}
+
+header .navbar a{
+  display: inline-block;
+  padding: 5px 10px;
+  margin-top:40px;
+  color: var(--lilac);
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 1.3em;
+  transition: transform 0.3s ease, font-size 0.3s ease;
+  max-width: 120px;
+  overflow: hidden;
+  width: 150px; /* Setăm o lățime fixă pentru fiecare element */
+  height: 40px;
+}
+
+header .navbar a:hover{
+  color:#633552;
+  font-size: 16px;
+  transform: translateY(-15%) scale(1.0);
+  font-weight: bold;
+}
+
+header .logo {
+  max-width: 150px;
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-top: 18px;
+}
+
+.home_pic{
+  margin-top:55px;
+  width: 1450px;
+  height: 380px;
+  margin-left: 43px;
+  margin-right: 23px;
+  padding: 20px;
+  display:block; 
+  border-radius: 40px;
+  
+}
+
+.index_description{
+    text-align: justify;
+    font-size: 23px;
+    width: auto;
+    color: #633552;
+    font: Poppins;
+    text-transform: none;
+   
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap');
+html {
+  font-size: 100%;
+} /*16px*/
+
+:root {
+  /* colors */
+  --primary-100: #e2e0ff;
+  --primary-200: #c1beff;
+  --primary-300: #a29dff;
+  --primary-400: #837dff;
+  --primary-500: #645cff;
+  --primary-600: #504acc;
+  --primary-700: #3c3799;
+  --primary-800: #282566;
+  --primary-900: #141233;
+
+  /* grey */
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+  /* rest of the colors */
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
+  /* fonts  */
+  --headingFont: 'Roboto', sans-serif;
+  --bodyFont: 'Nunito', sans-serif;
+  --smallText: 0.7em;
+  /* rest of the vars */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-900);
+  --borderRadius: 0.25rem;
+  --letterSpacing: 1px;
+  --transition: 0.3s ease-in-out all;
+  --max-width: 1120px;
+  --fixed-width: 600px;
+
+  /* box shadow*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  max-width: 40em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  margin-bottom: 1.38rem;
+  font-family: var(--headingFont);
+  font-weight: 400;
+  line-height: 1.3;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text-small {
+  font-size: var(--smallText);
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+/* buttons */
+
+.btn {
+  cursor: pointer;
+  color: var(--white);
+  background: var(--primary-500);
+  border: transparent;
+  border-radius: var(--borderRadius);
+  letter-spacing: var(--letterSpacing);
+  padding: 0.375rem 0.75rem;
+  box-shadow: var(--shadow-1);
+  transition: var(--transtion);
+  text-transform: capitalize;
+  display: inline-block;
+}
+.btn:hover {
+  background: var(--primary-700);
+  box-shadow: var(--shadow-3);
+}
+.btn-hipster {
+  color: var(--primary-500);
+  background: var(--primary-200);
+}
+.btn-hipster:hover {
+  color: var(--primary-200);
+  background: var(--primary-700);
+}
+.btn-block {
+  width: 100%;
+}
+
+
+
+.page {
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.page {
+  padding-top: 2rem;
+  min-height: calc(100vh - (6rem + 4rem));
+}
+
+/*
+=============== 
+Recipes 
+===============
+*/
+
+.recipes-container {
+  display: grid;
+  gap: 2rem 1rem;
+  margin-top: 80px;
+}
+
+.recipes-list {
+  display: grid;
+  gap: 2rem 1rem;
+  padding-bottom: 3rem;
+}
+.tags-container {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+  /* background: blue; */
+}
+.tags-container h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.tags-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.tags-list a {
+  text-transform: none;
+  display: block;
+  color: var(--lilac);
+  transition: var(--transition);
+  font-size: 20px;
+
+}
+.tags-list a:hover {
+  color: #633552;
+
+}
+.recipe {
+  display: block;
+}
+.recipe-img {
+  height: 15rem;
+  border-radius: var(--borderRadius);
+  margin-bottom: 1rem;
+}
+.recipe h5 {
+  margin-bottom: 0;
+  margin-top: 0.25rem;
+  line-height: 1;
+  color: #633552;
+}
+
+
+.recipe p {
+  margin-bottom: 0;
+  line-height: 1;
+  color: var(--grey-500);
+  margin-top: 0.5rem;
+  text-transform: none;
+  letter-spacing: var(--letterSpacing);
+}
+@media screen and (min-width: 576px) {
+  .recipes-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .recipe-img {
+    height: 10rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .recipes-container {
+    grid-template-columns: 200px 1fr;
+    gap: 1rem;
+  }
+  .recipes-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .recipe p {
+    font-size: 0.85rem;
+  }
+  .tags-container {
+    order: 0;
+    /* background: blue; */
+  }
+  .tags-list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .recipe h5 {
+    font-size: 1.15rem;
+  }
+  .recipes-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+.tags-wrapper {
+  display: grid;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+.tag {
+  background: var(--grey-500);
+  border-radius: var(--borderRadius);
+  text-align: center;
+  color: var(--white);
+  transition: var(--transition);
+  padding: 0.75rem 0;
+}
+.tag:hover {
+  background: var(--primary-500);
+}
+.tag h5,
+.tag p {
+  margin-bottom: 0;
+}
+.tag h5 {
+  font-weight: 600;
+}
+@media screen and (min-width: 576px) {
+  .tags-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  .tags-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.recipe-hero {
+  display: grid;
+  gap: 3rem;
+  margin-top: 60px;
+}
+
+.recipe-hero-img {
+  height: 300px;
+  border-radius: var(--borderRadius);
+}
+.recipe-info p {
+  color: var(--grey-600);
+  text-transform: none;
+}
+.recipe-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+.recipe-icons i {
+  font-size: 1.5rem;
+  color: var(--primary-500);
+}
+.recipe-icons h5,
+.recipe-icons p {
+  margin-bottom: 0;
+  font-size: 0.85em;
+}
+
+.recipe-icons p {
+  color: var(--grey-600);
+}
+.recipe-tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+.recipe-tags a {
+  background: var(--lilac);
+  border-radius: var(--borderRadius);
+  color: var(--white);
+  padding: 0.05rem 0.5rem;
+  margin: 0 0.25rem;
+  text-transform: capitalize;
+}
+@media screen and (min-width: 992px) {
+  .recipe-hero {
+    grid-template-columns: 4fr 5fr;
+    align-items: center;
+  }
+}
+.recipe-content {
+  padding: 3rem 0;
+  display: grid;
+  gap: 2rem 5rem;
+}
+@media screen and (min-width: 992px) {
+  .recipe-content {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+.single-instruction header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: center;
+
+}
+.single-instruction header p {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--primary-500);
+  margin-bottom: 0;
+}
+.single-instruction > p {
+  color: var(--grey-700);
+  text-transform: none;
+}
+
+.single-instruction header div {
+  height: 2px;
+  background: var(--grey-300);
+}
+
+.second-column {
+  display: grid;
+  row-gap: 2rem;
+}
+
+.single-ingredient {
+  border-bottom: 2px solid var(--grey-300);
+  padding-bottom: 0.75rem;
+  color: var(--grey-700);
+  text-transform: none;
+}
+.single-tool {
+  border-bottom: 2px solid var(--grey-300);
+  padding-bottom: 0.75rem;
+  color: var(--lilac);
+  text-transform:none;
+}
+
+.about-page {
+  overflow: hidden; 
+  margin-top: 60px;
+}
+
+.about-description {
+  float: left; 
+  width: 500px;
+  font-size: 18px;
+  color: #633552;
+  text-align: justify;
+  text-transform: none;
+}
+
+.about-img {
+  float: right;
+  max-width: 50%;
+ 
+}
+
+.featured-recipes{
+  margin-top: 30px;
+}
+
+.featured-title{
+  text-align: center;
+  color:#633552;
+  font-style: bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  color: #633552; /* Change to the desired color value */
+}
+
+h2 {
+  color: #633552; /* Change to the desired color value */
+}
+
+h4 {
+  color: #633552; /* Change to the desired color value */
+}
+
+h5 {
+  color: var(--lilac) /* Change to the desired color value */
+}
+
+.container{
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  margin-top: 70px;
+  padding: 20px;
+  background-color:#ebd7f7;
+  border-radius:10px ;
+  box-shadow: 0 5px 10 px rgba(0,0,0,0,0.2);
+}
+
+.container h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #633552;
+  font-family: "Poppins", sans-serif;
+}
+
+form input,
+form textarea{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border:none;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+form input:focus,
+form textarea:focus{
+  outline: none;
+  box-shadow:0 0 5px #333;
+}
+
+form button{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius:5px ;
+  background-color:var(--lilac);
+  color:#fff;
+  cursor: pointer;
+  transition: 0.3 ease;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+form button:hover{
+  background-color:#633552;
+  ;
+}
+
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  font-weight: 420;
+}
+
+@media screen and (max-width: 576px) {
+  /* Adjust layout for small screens */
+  .container {
+    width: 100%; /* Adjust container width to fill the screen */
+    padding: 0 10px; /* Add some padding to the sides for spacing */
+  }
+  /* Adjust font sizes for small screens */
+  h1 {
+    font-size: 24px; /* Example: Decrease font size for smaller screens */
+  }
+  /* Example: Hide some elements or adjust their layout for smaller screens */
+  .desktop-only {
+    display: none;
+  }
+}
+
+/* Styles for medium screens (between 577px and 992px) */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  /* Adjust layout for medium screens */
+  .container {
+    width: 80%; /* Example: Make the container slightly narrower */
+    padding: 0 20px; /* Add more padding for medium screens */
+  }
+  /* Adjust font sizes for medium screens */
+  h1 {
+    font-size: 36px; /* Example: Increase font size for medium screens */
+  }
+}
+
+/* Styles for large screens (993px and above) */
+@media screen and (min-width: 993px) {
+  /* Adjust layout for large screens */
+  .container {
+    width: 70%; /* Example: Make the container even narrower for large screens */
+    padding: 0 30px; /* Add even more padding for large screens */
+  }
+  /* Adjust font sizes for large screens */
+  h1 {
+    font-size: 48px; /* Example: Further increase font size for large screens */
+  }
+  /* Example: Show additional elements or adjust their layout for large screens */
+  .desktop-only {
+    display: block;
+  }
+}
+
